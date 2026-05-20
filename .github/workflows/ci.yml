@@ -45,6 +45,7 @@ jobs:
           -Dfrida-gum:devkits=gum,gumjs
           -Dfrida-core:compiler_backend=enabled
           -Dfrida-core:devkits=core
+          -Dfrida-core:compat=disabled
       - name: Compile
         run: make
       - name: Install
