@@ -10,7 +10,7 @@ jobs:
   frida-android:
     strategy:
       matrix:
-        arch: [x86, x86_64, arm, arm64]
+        arch: [arm64]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
@@ -98,7 +98,7 @@ jobs:
     needs: frida-android
     strategy:
       matrix:
-        arch: [x86, x86_64, arm, arm64]
+        arch: [arm64]
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
